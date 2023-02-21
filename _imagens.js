@@ -1,0 +1,28 @@
+//=============== IMAGENS E SONS DO JOGO!
+
+//imagens do jogo
+let imagemDaEstrada;
+let imagemDoAtor;
+let imagemCarro1;
+let imagemCarro2;
+let imagemCarro3;
+
+//sons do jogo
+let somDaTrilha;
+let somDaColisao;
+let somDosPontos;
+
+//função para carregar imagem da estrada
+//função para carregar imagem do ator
+function preload(){
+  imagemDaEstrada = loadImage("imagens/estrada.png");
+  imagemDoAtor = loadImage("imagens/ator-1.png");
+  imagemCarro1 = loadImage("imagens/carro-1.png");
+  imagemCarro2 = loadImage("imagens/carro-2.png");
+  imagemCarro3 = loadImage("imagens/carro-3.png");
+  imagemCarros = [imagemCarro1, imagemCarro2, imagemCarro3, imagemCarro1, imagemCarro2, imagemCarro3];
+  
+  somDaTrilha = loadSound("sons/trilha.mp3");
+  somDaColisao = loadSound("sons/colidiu.mp3");
+  somDosPontos = loadSound("sons/pontos.wav");
+}
